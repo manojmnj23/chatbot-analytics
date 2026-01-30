@@ -1,0 +1,57 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - thank_you
+  - order_status
+  - product_search
+  - return_request
+  - shipping_info
+  - nlu_fallback
+
+entities:
+  - product
+  - color
+  - category
+  - order_id
+
+responses:
+
+  utter_greet:
+    - text: "Hi! 👋 Welcome to ShopEase. How can I help you today?"
+
+  utter_goodbye:
+    - text: "Goodbye! 🛍️ Have a great day."
+
+  utter_thank_you:
+    - text: "You're welcome! Let me know if you need anything else."
+
+  utter_ask_order_id:
+    - text: "Sure! Could you please provide your order ID?"
+
+  utter_order_status:
+    - text: "Your order is currently being processed. You will receive delivery updates soon."
+
+  utter_product_search:
+    - text: "Here are some options based on your request. Please check our catalog."
+
+  utter_return_request:
+    - text: "To start a return, please confirm your order ID."
+
+  utter_shipping_info:
+    - text: "Shipping usually takes 3–5 business days. Standard rates apply."
+
+  utter_default:
+    - text: "I'm sorry, I didn’t understand that. Can you please rephrase?"
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_thank_you
+  - utter_ask_order_id
+  - utter_order_status
+  - utter_product_search
+  - utter_return_request
+  - utter_shipping_info
+  - utter_default

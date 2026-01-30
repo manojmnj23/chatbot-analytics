@@ -1,0 +1,37 @@
+version: "3.1"
+
+stories:
+
+- story: greeting path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: check order status
+  steps:
+  - intent: order_status
+  - action: utter_ask_order_id
+  - intent: order_status
+  - action: utter_order_status
+
+- story: product search
+  steps:
+  - intent: product_search
+  - action: utter_product_search
+
+- story: return flow
+  steps:
+  - intent: return_request
+  - action: utter_ask_order_id
+  - intent: return_request
+  - action: utter_return_request
+
+- story: shipping question
+  steps:
+  - intent: shipping_info
+  - action: utter_shipping_info
+
+- story: end goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye

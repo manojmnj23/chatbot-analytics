@@ -1,0 +1,63 @@
+version: "3.1"
+
+nlu:
+
+# Greetings
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey there
+    - good morning
+    - hi chatbot
+
+# Farewell
+- intent: goodbye
+  examples: |
+    - bye
+    - see you later
+    - goodbye
+    - talk soon
+
+# Thank You
+- intent: thank_you
+  examples: |
+    - thanks
+    - thank you
+    - appreciate it
+
+# Order Status
+- intent: order_status
+  examples: |
+    - where is my order
+    - track my order
+    - order status
+    - my delivery status
+
+# Product Inquiry
+- intent: product_search
+  examples: |
+    - show me red shoes
+    - find women's jackets
+    - search for smartphones
+
+# Return / Refund Request
+- intent: return_request
+  examples: |
+    - I want to return my order
+    - how do I return this
+    - initiate a refund
+
+# Shipping Info
+- intent: shipping_info
+  examples: |
+    - shipping cost
+    - delivery time
+    - when will it arrive
+
+# Fallback (confusion)
+- intent: nlu_fallback
+  examples: |
+    - ajshdkajshd
+    - random text
+    - make no sense
